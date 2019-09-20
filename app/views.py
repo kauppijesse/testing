@@ -9,7 +9,7 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def my_sum(i: int, i2: int):
-    return i + i2
+    return i + i2+1
 
 @csrf_exempt
 def test_method(request):
