@@ -14,7 +14,7 @@ def my_sum(i: int, i2: int):
 @csrf_exempt
 def test_method(request):
     if request.method == 'GET':
-        return JsonResponse({"data": my_sum(1, 2)}, content_type='application/json')
+        return JsonResponse({"data": my_sum(2, 2)}, content_type='application/json')
     else:
         return JsonResponse({"data": my_sum(2, 2)}, content_type='application/json')
 
